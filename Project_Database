@@ -1,0 +1,32 @@
+
+Agriculture Portal 
+
+Database :
+
+1. user table : for registration 
+  fields:
+    id, first_name,last_name, email,password,confirmPassword, mobile, dob, address.
+    
+2. products:
+  > vegitables table: 
+   fields:
+    id, vegitable_name, vegitable_price, vegitable_quantity.
+    
+    
+    > pesticieds table: 
+   fields:
+    id, pesticied_name, pesticied_price, pesticied_quantity.
+    
+    
+     > firtilizers table: 
+   fields:
+    id, firtilizer_name, firtilizer_price, firtilizer_quantity.
+3.orders table:
+   id, customer_id, product_name, product_price, product_totalprice,product_quantity, customer_address,order_date(date+time)
+    
+    
+    
+   
+    
+    
+    

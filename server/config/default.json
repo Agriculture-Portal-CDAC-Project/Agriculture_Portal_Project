@@ -1,0 +1,7 @@
+{
+    "server" : "localhost",
+    "database" : "Agriculture_Portal",
+    "user":"root",
+    "password" : "manager",
+    "port" :9898
+}

@@ -1,0 +1,8 @@
+
+create database Agriculture_Portal;
+
+use Agriculture_Portal;
+
+create table users(id int primary key AUTO_INCREMENT , first_name varchar(50), last_name varchar(50),email varchar(50) NOT NULL UNIQUE,password varchar(10), mobile varchar(12) NOT NULL UNIQUE, dob date, address varchar(50), roll varchar(15));
+
+
