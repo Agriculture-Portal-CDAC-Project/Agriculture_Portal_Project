@@ -12,6 +12,8 @@ create table users(id int primary key AUTO_INCREMENT , first_name varchar(50), l
 
 create table products (id int primary key AUTO_INCREMENT, product_name varchar(50) NOT NULL, product_price float ,product_quantity int , description varchar(120), image varchar(120), category varchar(50));
 
+insert into products(product_name,product_price,product_quantity,description,image,category)
+           values("tomato", 200, 30,"fresh Tomato","tomato.png" ,"vegitable");
 
 
 

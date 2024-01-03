@@ -22,10 +22,13 @@ Database :
    fields:
     id, firtilizer_name, firtilizer_price, firtilizer_quantity.
 3.orders table:
-   id, customer_id, product_name, product_price, product_totalprice,product_quantity, customer_address,order_date(date+time)
+   id, customer_id, product_name, product_price, product_totalprice,product_quantity, customer_address,order_date(date+time), status
     
     
-    
+4.cart 
+
+5.reviews
+6.wishlist
    
     
     
