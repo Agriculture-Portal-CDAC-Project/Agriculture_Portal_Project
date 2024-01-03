@@ -1,4 +1,35 @@
+use this to clone project repository 
+
 git clone https://github.com/Agriculture-Portal-CDAC-Project/Agriculture_Portal_Project.git 
 
-===================================================================================================
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+use this token to push data
+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
+
+----------------------------------------------------------------------------------------------------------------
+steps :
+1. create folder in your pc named as - CDAC_AGRICULTURE_PORTAL_PROJECT
+
+2. open that folder in terminal and hit this url : git clone https://github.com/Agriculture-Portal-CDAC-Project/Agriculture_Portal_Project.git
+
+3. you will get all present content of repository 
+
+----------------------------------------------------------------------------------------------------------------
+4. to push your changes : 
+    open the folder in terminal :
+    
+   git add .
+   git commit -m "your msg regarding changes"
+   git push 
+   username : enter your username 
+   password : use this token : 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
+   
+   you will able to push your data on git ;
+   
+----------------------------------------------------------------------------------------------------------------
+   
+   5. to pull data from git repository :
+     git pull
+     username : your username 
+     password : your personal token 
+     

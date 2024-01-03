@@ -1,8 +1,17 @@
 
-create database Agriculture_Portal;
+ create database Agriculture_Portal;
 
 use Agriculture_Portal;
 
 create table users(id int primary key AUTO_INCREMENT , first_name varchar(50), last_name varchar(50),email varchar(50) NOT NULL UNIQUE,password varchar(10), mobile varchar(12) NOT NULL UNIQUE, dob date, address varchar(50), roll varchar(15));
+
+
+-- products:
+--   > vegitables table
+-- id, vegitable_name, vegitable_price, vegitable_quantity.
+
+create table products (id int primary key AUTO_INCREMENT, product_name varchar(50) NOT NULL, product_price float ,product_quantity int , description varchar(120), image varchar(120), category varchar(50));
+
+
 
 
