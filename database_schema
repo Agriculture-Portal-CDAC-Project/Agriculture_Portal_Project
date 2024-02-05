@@ -1,0 +1,22 @@
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| id          | int          | NO   | PRI | NULL    | auto_increment |
+| name        | varchar(50)  | YES  |     | NULL    |                |
+| price       | float        | YES  |     | NULL    |                |
+| created_at  | timestamp    | YES  |     | NULL    |                |
+| description | varchar(500) | YES  |     | NULL    |                |
+| modified_at | timestamp    | YES  |     | NULL    |                |
+| cat_id      | int          | YES  | MUL | NULL    |                |
+| qty         | int          | YES  |     | NULL    |                |
+| image       | varchar(300) | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+
+
+create table product(id int primary key auto_increment,name varchar(50),price float,created_at timestamp,description varchar(500),modified_at timestamp,cat_id int,qty int,image varchar(300));
+
+create table cart(id int primary key auto_increment,u_id int not null,p_id int not null,qty int not null);
+alter table cart add unique (u_id,p_id);
+
+create table category(id int primary key auto_increment,name varchar(100) unique,created_at timestamp,modified_at timestamp);
+alter table category modify name varchar(100) not null;
