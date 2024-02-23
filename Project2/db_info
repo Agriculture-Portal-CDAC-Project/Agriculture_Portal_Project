@@ -1,0 +1,30 @@
+
+//get api for image by image name
+http://localhost:9898/product/images/1706986539048-santa.png
+
+
+//post api
+//
+
+
+//db documentation 
+
+cart  --> 
+
+p_id and u_id is unique ......//to prevent of adding same product again and again
+//all columns are not null
++-------+------+------+-----+---------+----------------+
+| Field | Type | Null | Key | Default | Extra          |
++-------+------+------+-----+---------+----------------+
+| id    | int  | NO   | PRI | NULL    | auto_increment |
+| u_id  | int  | YES  | MUL | NULL    |                |
+| p_id  | int  | YES  | MUL | NULL    |                |
+| qty   | int  | YES  |     | NULL    |                |
++-------+------+------+-----+---------+----------------+
+
+
+
+
+product --->
+
+

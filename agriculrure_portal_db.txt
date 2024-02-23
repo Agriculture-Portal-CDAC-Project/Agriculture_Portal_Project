@@ -1,0 +1,87 @@
+create database db1;
+
+create database project;
+use project;
+create table users(
+	id int primary key AUTO_INCREMENT , 
+	first_name varchar(50),
+	last_name varchar(50),
+	email varchar(50) NOT NULL UNIQUE,
+	password varchar(150), 
+	mobile varchar(12) NOT NULL UNIQUE,
+	dob date, 
+	address varchar(50), 
+	roll varchar(15)
+);
+
+create table product(
+	id int primary key auto_increment,
+	name varchar(50),
+	price float,
+	created_at timestamp,
+	description varchar(500),
+	modified_at timestamp,
+	cat_id int,
+	qty int,
+	image varchar(300)
+);
+
+insert into product(name,price,description,cat_id,qty,image) values("potato",200, "fresh tomato",1,20,"godzilla_minus_one.png");
+create table category(
+	id int primary key auto_increment,
+	name varchar(100) unique,
+	created_at timestamp,
+	modified_at timestamp
+);
+
+alter table category modify name varchar(100) not null;
+
+insert into category(name)values("vegetable");
+insert into category(name)values("pesticide");
+insert into category(name)values("firtilizer");
+
+CREATE table orderStatus(
+    id INTEGER PRIMARY key auto_increment,
+    u_id INTEGER,
+    total FLOAT,
+    status INTEGER DEFAULT 0, 
+    createdTimestamp timestamp DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE orderDetails(
+    id INTEGER PRIMARY key auto_increment,
+    order_id INTEGER,
+    p_id INTEGER,
+    quantity INT,
+    price float,
+    total FLOAT,
+    createdTimestamp timestamp DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE cart(
+    id INTEGER PRIMARY key auto_increment,
+    u_id INTEGER,
+    p_id INTEGER,
+    qty INT,
+    price float,
+    total FLOAT,
+    createdTimestamp timestamp DEFAULT CURRENT_TIMESTAMP
+);
+alter table cart add unique (u_id,p_id);
+
+
+show tables;
+
+select * from users;
+select * from product;
+select * from category;
+-- drop table category;
+-- delete  from product;
+
+select * from product where cat_id=(select id from category where name="pesticide");
+select p.name , p.cat_id from product p inner join category c on p.cat_id = c.id;
+
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1401';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+

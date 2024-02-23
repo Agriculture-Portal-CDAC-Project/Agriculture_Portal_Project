@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MyCartsFragment">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--    android:background="#FEF9F9"-->
+<!--    android:id="@+id/toolBar"-->
+<!--     app:title="Cart"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="570dp" />
+
+    <LinearLayout
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginTop="3dp"
+            android:id="@+id/btnTotal"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_weight="0.8"
+            android:backgroundTint="#2B9130"
+            android:text="" />
+
+        <Button
+
+            android:id="@+id/btnProceed"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.3"
+            android:backgroundTint="#198F1E"
+            android:layout_marginBottom="3dp"
+            android:text="Proceed Payment" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="5dp"
+                android:background="#F3F2F2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:layout_weight="0.3"
+                android:elevation=".3dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Name "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+                <EditText
+                    android:inputType="textEmailAddress"
+
+
+                    android:textColorHint="@color/black"
+                    android:id="@+id/editFname"
+                    android:textColor="#2E47D1"
+                    android:textSize="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:background="#F3F2F2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:elevation=".3dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+                <EditText
+                    android:inputType="textEmailAddress"
+
+                    android:textColorHint="@color/black"
+                    android:id="@+id/editLname"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:background="#F3F2F2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="vertical"
+                android:layout_weight="0.3"
+                android:elevation=".3dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:hint="fname"
+                    android:id="@+id/editEmail"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:background="#F3F2F2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.3"
+                android:elevation=".3dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+                <EditText
+                    android:inputType="phone"
+                    android:hint="dob"
+                    android:id="@+id/editDob"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:background="#F3F2F2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.3"
+                android:elevation=".3dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No."
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:hint="mobile"
+                    android:id="@+id/editMobile"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:background="#F3F2F2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.3"
+                android:elevation=".3dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:hint="address"
+                    android:id="@+id/editAddress"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:onClick="save"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:background="@color/purple_700"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:layout_marginBottom="30dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
