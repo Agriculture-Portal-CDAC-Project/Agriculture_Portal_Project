@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.PlaceOrderActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--    <LinearLayout-->
+<!--        android:gravity="center"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+<!--    <TextView-->
+<!--        android:layout_weight="0.5"-->
+<!--        android:id="@+id/quantity"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Quantity:"/>-->
+<!--    <TextView-->
+
+<!--        android:layout_weight="0.5"-->
+<!--        android:id="@+id/textQuantity"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Quantity"/>-->
+
+<!--</LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:gravity="center"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+<!--        <TextView-->
+<!--            android:layout_weight="0.5"-->
+<!--            android:id="@+id/total"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Total:"/>-->
+<!--        <TextView-->
+<!--            android:layout_weight="0.5"-->
+<!--            android:id="@+id/textTotal"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="total"/>-->
+
+<!--    </LinearLayout>-->
+
+        <ImageView
+            android:src="@drawable/done"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="350dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#3249CC"
+            android:text="Your Order has been placed.."
+            android:layout_marginTop="38dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#3249CC"
+            android:text="Thank You Visit Again ..!!"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+
+        android:backgroundTint="#258F2A"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="order placed!!"
+        android:id="@+id/btnPlaceOrder"/>
+</RelativeLayout>

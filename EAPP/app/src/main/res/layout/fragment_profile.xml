@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+       >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="#BFBBBB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/square_border"
+            android:elevation="3sp"
+            android:src="@drawable/profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="25dp"
+                android:hint="Hello!!"
+                android:textSize="20dp" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Name"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:hint="Shravani!!"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/editProfileBtn"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/edit_profile" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:background="#F3F2F2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:layout_weight="0.3"
+                android:elevation=".3dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Name "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+                <EditText
+                    android:inputType="textEmailAddress"
+
+
+                    android:textColorHint="@color/black"
+                    android:id="@+id/editFname"
+                    android:textColor="#2E47D1"
+                    android:textSize="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:background="#F3F2F2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:elevation=".3dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+                <EditText
+                    android:inputType="textEmailAddress"
+
+                    android:textColorHint="@color/black"
+                    android:id="@+id/editLname"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:background="#F3F2F2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="vertical"
+                android:layout_weight="0.3"
+                android:elevation=".3dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:hint="fname"
+                    android:id="@+id/editEmail"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:background="#F3F2F2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.3"
+            android:elevation=".3dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+            <EditText
+                android:inputType="phone"
+                android:hint="dob"
+                android:id="@+id/editDob"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+        </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:background="#F3F2F2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.3"
+            android:elevation=".3dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile No."
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+            <EditText
+                android:inputType="textEmailAddress"
+                android:hint="mobile"
+                android:id="@+id/editMobile"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+        </LinearLayout>
+            <LinearLayout
+                android:padding="5dp"
+                android:background="#F3F2F2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.3"
+                android:elevation=".3dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address "
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    />
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:hint="address"
+                    android:id="@+id/editAddress"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/changePasswordBtn"
+                android:onClick="changePasswordBtn"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password?"
+                android:textColor="#263FC8"
+                />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:text="Change Password?"
+                android:background="#263FC8"
+                />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
