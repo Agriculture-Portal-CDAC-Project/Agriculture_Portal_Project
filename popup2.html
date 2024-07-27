@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chase Compass</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+    body {
+    background-color: #f8f9fa; /* Light background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.popup {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.title {
+    font-weight: normal;
+    color: #000; /* Black color */
+    margin-bottom: 20px;
+    font-size: 1.25rem; /* 20px */
+}
+
+.listening-box {
+    padding: 20px;
+     /*background-color: #f0f0f0; Light background */
+    border-radius: 10px;
+}
+
+.listening-text {
+    font-size: 1.5rem; /* 24px */
+    font-weight: bold;
+    color: #333; /* Dark gray color */
+    margin: 0;
+}
+
+.ask-text {
+    font-size: 1rem; /* 16px */
+    color: #888; /* Light gray color */
+    margin-top: 5px;
+}
+
+.listening-icon {
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #80d4ff, #007bff); /* Blue gradient */
+    border-radius: 50%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.listening-icon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 60%;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTY4IiBoZWlnaHQ9IjE2OCIgdmlld0JveD0iMCAwIDE2OCAxNjgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHg9IjY1IiB3aWR0aD0iMzkiIGhlaWdodD0iMTY4IiByeD0iMjAiIGZpbGw9IndoaXRlIi8+CjxyZWN0IHg9IjExMSIgd2lkdGg9IjM5IiBoZWlnaHQ9IjE2OCIgcng9IjIwIiBmaWxsPSJ3aGl0ZSIvPgo8cm
+
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <div class="popup-content text-center">
+            <h2 class="title">Chase Compass for your service</h2>
+            <div class="listening-box">
+                <p class="listening-text">Listening..</p>
+                <p class="ask-text">Ask. best hotels in New York</p>
+                <div class="listening-icon"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

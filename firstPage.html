@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Search Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background-image: url('https://www.ihcltata.com/content/dam/luxury/hotels/Taj_Lands_End_Mumbai/images/4x3/R&S_WOGLI_Exterior-Master.jpg'); /* Placeholder image */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+        .search-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .recommended {
+            margin-top: 20px;
+        }
+        .recommended h3 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <!-- Header -->
+    <div class="hero text-center">
+        <h1>Plan your next beach escape. Discover Florida's white sand beaches and turquoise waters.</h1>
+    </div>
+
+    <!-- Search Box -->
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-8 col-lg-6">
+            <div class="search-box">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="destination">Destination</label>
+                            <input type="text" class="form-control" id="destination" placeholder="City, airport or landmark">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="checkin">Check-in date</label>
+                            <input type="date" class="form-control" id="checkin">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="checkout">Check-out date</label>
+                            <input type="date" class="form-control" id="checkout">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="guests">Guests</label>
+                            <select class="form-control" id="guests">
+                                <option>2 adults</option>
+                                <option>1 adult</option>
+                                <option>3 adults</option>
+                                <option>4 adults</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Search hotels</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recommended for you -->
+    <div class="recommended text-center">
+        <h3>Recommended for you</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.ihcltata.com/content/dam/luxury/hotels/Taj_Lands_End_Mumbai/images/4x3/R&S_WOGLI_Exterior-Master.jpg" class="card-img-top" alt="Four Seasons Hotel New York">
+                    <div class="card-body">
+                        <h5 class="card-title">Four Seasons Hotel New York Downtown</h5>
+                        <p class="card-text">Discover exciting offers at Four Seasons Hotel New York Downtown - New York, New York, United States</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.ihcltata.com/content/dam/luxury/hotels/Taj_Lands_End_Mumbai/images/4x3/R&S_WOGLI_Exterior-Master.jpg" class="card-img-top" alt="Sofitel Chicago Magnificent Mile">
+                    <div class="card-body">
+                        <h5 class="card-title">Sofitel Chicago Magnificent Mile</h5>
+                        <p class="card-text">Discover exciting offers at Sofitel Chicago Magnificent Mile - Chicago, Illinois, United States</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.ihcltata.com/content/dam/luxury/hotels/Taj_Lands_End_Mumbai/images/4x3/R&S_WOGLI_Exterior-Master.jpg" class="card-img-top" alt="The Peninsula Chicago">
+                    <div class="card-body">
+                        <h5 class="card-title">The Peninsula Chicago</h5>
+                        <p class="card-text">Discover exciting offers at The Peninsula Chicago - Chicago, Illinois, United States</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

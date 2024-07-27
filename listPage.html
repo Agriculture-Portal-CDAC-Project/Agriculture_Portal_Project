@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Search Results</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hotel-card {
+            margin-bottom: 20px;
+        }
+        .hotel-info {
+            padding: 20px;
+        }
+        .hotel-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .hotel-rating, .hotel-price {
+            font-size: 1.25rem;
+            margin-top: 10px;
+        }
+        .hotel-details, .hotel-amenities {
+            margin-top: 10px;
+        }
+        .map-container img {
+            width: 100%;
+            height: auto;
+        }
+        .search-title {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Hotel Search Results</h1>
+        <div class="search-title">
+            You searched: Looking for a Pet Friendly hotel nearest to the New York Times Square
+        </div>
+
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-8">
+                <!-- Hotel Card 1 -->
+                <div class="card hotel-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="https://via.placeholder.com/300x200" class="card-img" alt="Park Hyatt New York">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body hotel-info">
+                                <h5 class="hotel-title">Park Hyatt New York</h5>
+                                <p class="hotel-rating">5-star <span class="badge badge-success">4,137 reviews</span></p>
+                                <p class="hotel-price">53,500 pts or $535 per night</p>
+                                <p class="hotel-details">Total (8 nights): $5,000 or 50,000 pts + $235<br>Best value<br>Includes taxes/fees<br>Additional resort fees may apply</p>
+                                <p class="hotel-amenities">
+                                    Nearby distance: 2.5 Miles from Niagara Falls<br>
+                                    Best amenities: Swimming pool<br>
+                                    Relevant reviews: World's best, Awesome food, Clean, Pet friendly
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Card 2 -->
+                <div class="card hotel-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="https://via.placeholder.com/300x200" class="card-img" alt="Pendry Manhattan West">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body hotel-info">
+                                <h5 class="hotel-title">Pendry Manhattan West</h5>
+                                <p class="hotel-rating">5-star <span class="badge badge-success">4,137 reviews</span></p>
+                                <p class="hotel-price">59,900 pts or $599 per night</p>
+                                <p class="hotel-details">Total (8 nights): $5,000 or 50,000 pts + $235<br>Best value<br>Includes taxes/fees<br>Additional resort fees may apply</p>
+                                <p class="hotel-amenities">
+                                    Your benefits: Daily breakfast for 2 + $100 property credit<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-4">
+                <!-- Map Section -->
+                <div class="map-container">
+                    <img src="https://via.placeholder.com/400x800" alt="Map" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
