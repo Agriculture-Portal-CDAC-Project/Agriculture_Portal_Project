@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park Hyatt New York</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.hotel-image {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.star-rating {
+    font-size: 18px;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.review-count {
+    color: #6c757d;
+}
+
+.marriott-eligible {
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.recommended-search {
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.recommended-search h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.badge-secondary {
+    margin-right: 5px;
+}
+
+.total {
+    font-size: 18px;
+   
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="data:image/jpeg;base64,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" alt="Park Hyatt New York" class="img-fluid hotel-image">
+            </div>
+            <div class="col-md-7">
+                <h2>Park Hyatt New York</h2>
+                <p class="star-rating">★★★★★ <span class="review-count">4,137 reviews</span></p>
+                <p class="marriott-eligible">Marriott Bonvoy eligible</p>
+                <p class="price">53,500 pts or $535 per night*</p>
+                <div class="recommended-search">
+                    <h3>Recommended search</h3>
+                    <p>Nearby distance</p>
+                    <p class="highlight">2.5 Miles from Niagara Falls</p>
+                    <p>Best amenities</p>
+                    <p class="highlight">Swimming pool</p>
+                    <p>Relevant reviews</p>
+                    <div class="tags">
+                        <span class="badge badge-secondary">World's best</span>
+                        <span class="badge badge-secondary">Awesome food</span>
+                        <span class="badge badge-secondary">Clean</span>
+                        <span class="badge badge-secondary">Pet friendly</span>
+                    </div>
+                </div>
+                <p class="total">Total (8 nights): $5,000 or 50,000 pts + $235</p>
+                <p class="best-value">Best value</p>
+                <p class="includes">Includes taxes/fees</p>
+                <p class="additional">Additional resort fees may apply</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
